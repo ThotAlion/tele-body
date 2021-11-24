@@ -232,10 +232,10 @@ while continuer :
         print(dhhead)
         cost += min(abs(dhhead)*10000,100)
 
-    # try:
-    #r = requests.get('http://10.0.0.123/win&A=10&IX='+str(cost)+'&PL=4')
-    # except:
-        # pass
+    try:
+        r = requests.get('http://10.0.0.2/win&A=10&IX='+str(cost)+'&PL=4')
+    except:
+        pass
     print(cost)
     grey = cost*255/100
     ecran.fill((grey,grey,grey))
